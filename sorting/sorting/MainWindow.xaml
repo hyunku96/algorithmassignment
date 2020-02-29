@@ -1,0 +1,42 @@
+﻿<Window x:Class="sorting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sorting"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="540" Width="550">
+    <Grid Background="#FF5EC53F" Margin="0,0,0,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="271*"/>
+            <ColumnDefinition Width="66*"/>
+            <ColumnDefinition Width="205*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Data(공백 없이 쉼표로 구분)" VerticalAlignment="Top" Height="21" Width="238" FontWeight="Bold"/>
+        <TextBox x:Name="Data" HorizontalAlignment="Left" Height="57" Margin="10,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" AutomationProperties.Name="Data"/>
+        <TextBox x:Name="Heap" HorizontalAlignment="Left" Height="70" Margin="10,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Selection" HorizontalAlignment="Left" Height="70" Margin="10,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Insertion" HorizontalAlignment="Left" Height="70" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238"/>
+        <TextBox x:Name="Merge" HorizontalAlignment="Left" Height="70" Margin="10,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238"/>
+        <TextBox x:Name="Bubble" HorizontalAlignment="Left" Height="70" Margin="10,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" AutomationProperties.Name="Bubble"/>
+        <TextBox x:Name="Quick" HorizontalAlignment="Left" Height="70" Margin="10,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,93,0,0" TextWrapping="Wrap" Text="Insertion" VerticalAlignment="Top" Width="238" FontWeight="Bold" Height="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" FontWeight="Bold" Height="16" Text="Merge&#xD;&#xA;"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,292,0,0" TextWrapping="Wrap" Text="Bubble" VerticalAlignment="Top" Width="238" FontWeight="Bold" Height="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,393,0,0" TextWrapping="Wrap" Text="Quick" VerticalAlignment="Top" Width="238" FontWeight="Bold" Height="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,90,0,0" TextWrapping="Wrap" Text="Selection" VerticalAlignment="Top" Width="238" FontWeight="Bold" Grid.Column="1" Height="16" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,191,0,0" TextWrapping="Wrap" Text="Heap" VerticalAlignment="Top" Width="238" FontWeight="Bold" Grid.Column="1" Height="16" Grid.ColumnSpan="2"/>
+        <Button Content="Sort" HorizontalAlignment="Left" Margin="253,31,0,0" VerticalAlignment="Top" Width="78" Click="Button_Click" Height="54" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,292,0,0" TextWrapping="Wrap" Text="Shell" VerticalAlignment="Top" Width="238" FontWeight="Bold" Grid.Column="1" Height="16" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Shell" HorizontalAlignment="Left" Height="70" Margin="10,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,393,0,0" TextWrapping="Wrap" Text="Radix" VerticalAlignment="Top" Width="238" FontWeight="Bold" Grid.Column="1" Height="16" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Radix" HorizontalAlignment="Left" Height="70" Margin="10,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="reset" Content="Clear All" Grid.Column="2" HorizontalAlignment="Left" Margin="116,59,0,0" VerticalAlignment="Top" Width="66" Height="26" Click="Reset_Click"/>
+        <TextBox x:Name="RandomNum" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="4,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31"/>
+        <TextBlock x:Name="textBlock" Grid.Column="2" HorizontalAlignment="Left" Margin="40,33,0,0" TextWrapping="Wrap" Text="개 랜덤생성" VerticalAlignment="Top" Height="16" Width="69"/>
+        <Button x:Name="RandomButton" Content="Random!" Grid.Column="2" HorizontalAlignment="Left" Margin="4,59,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="RandomButton_Click"/>
+        <TextBlock x:Name="textBlock1" Grid.Column="2" HorizontalAlignment="Left" Margin="4,10,0,0" TextWrapping="Wrap" Text="Options" VerticalAlignment="Top" Height="16" Width="43" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock2" Grid.Column="2" HorizontalAlignment="Left" Margin="152,33,0,0" TextWrapping="Wrap" Text="Reset" VerticalAlignment="Top" RenderTransformOrigin="1.04,0.459" Height="16" Width="30"/>
+
+    </Grid>
+</Window>
